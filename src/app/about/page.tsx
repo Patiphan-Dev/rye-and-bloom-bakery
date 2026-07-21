@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { StorySection } from "@/components/about/story-section";
 import { OriginSection } from "@/components/about/origin-section";
 import { TeamSection } from "@/components/about/team-section";
+import { DeveloperCreditSection } from "@/components/about/developer-credit-section";
 import { storeInfo } from "@/lib/mock-data/store-info";
 
 export const metadata: Metadata = {
@@ -15,6 +16,7 @@ export default function AboutPage() {
       <StorySection />
       <OriginSection />
       <TeamSection />
+      <DeveloperCreditSection />
     </div>
   );
 }

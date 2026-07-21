@@ -3,10 +3,10 @@ export const storeInfo = {
   nameTh: "ไร แอนด์ บลูม เบเกอรี่",
   tagline: "อบสดใหม่ทุกวัน ด้วยใจรักในทุกชิ้น",
   isPlaceholder: true,
-  phone: "02-123-4567",
-  mobile: "081-234-5678",
-  email: "hello@ryeandbloom-example.com",
-  lineId: "@ryeandbloom",
+  phone: "081-XXX-XXXX",
+  mobile: "081-XXX-XXXX",
+  email: "patiphan.dev@gmail.com",
+  lineId: "@xxxxx",
   facebook: "https://facebook.com/ryeandbloom.example",
   instagram: "https://instagram.com/ryeandbloom.example",
   address: "123/45 ถนนสุขุมวิท แขวงคลองตัน เขตคลองเตย กรุงเทพฯ 10110 (ตัวอย่าง แก้ไขภายหลัง)",
@@ -17,4 +17,8 @@ export const storeInfo = {
     { day: "เสาร์ - อาทิตย์", hours: "08:00 - 20:00" },
     { day: "วันหยุดนักขัตฤกษ์", hours: "09:00 - 18:00" },
   ],
+  credit: {
+    developer: "Patiphan Dev",
+    email: "patiphan.dev@gmail.com",
+  },
 } as const;

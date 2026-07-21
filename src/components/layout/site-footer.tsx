@@ -53,6 +53,13 @@ export function SiteFooter() {
 
       <div className="border-t border-ink/10 py-5 text-center text-xs text-ink-soft/80">
         © 2026 {storeInfo.nameTh}. เว็บไซต์นี้เป็นตัวอย่างเพื่อการสาธิต ข้อมูลทั้งหมดเป็นข้อมูลจำลอง
+        <br className="sm:hidden" />
+        <span className="sm:ml-1">
+          Developed by{" "}
+          <a href={`mailto:${storeInfo.credit.email}`} className="font-medium text-terracotta hover:underline">
+            {storeInfo.credit.developer}
+          </a>
+        </span>
       </div>
     </footer>
   );

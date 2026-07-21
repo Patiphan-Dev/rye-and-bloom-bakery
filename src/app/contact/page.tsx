@@ -31,7 +31,7 @@ export default function ContactPage() {
             <h2 className="font-heading text-lg text-ink">ข้อมูลติดต่อ</h2>
             <ul className="mt-4 space-y-3 text-sm text-ink-soft">
               <li>📍 {storeInfo.address}</li>
-              <li>📞 โทร: {storeInfo.phone} / {storeInfo.mobile}</li>
+              <li>📞 โทร: {storeInfo.phone}</li>
               <li>💬 LINE: {storeInfo.lineId}</li>
               <li>✉️ {storeInfo.email}</li>
               <li>
