@@ -1,0 +1,52 @@
+import type { Order } from "@/types/order";
+
+export const mockOrderHistory: Order[] = [
+  {
+    id: "order-001",
+    orderNumber: "BK20260710-001",
+    placedAt: "2026-07-10T10:32:00.000Z",
+    status: "completed",
+    fulfillmentMethod: "pickup",
+    scheduledDate: "2026-07-11",
+    scheduledTimeSlot: "10:00 - 12:00",
+    items: [
+      { productName: "ซาวร์โดว์คลาสสิก", variantSummary: "-", quantity: 2, unitPrice: 145 },
+      { productName: "ครัวซองต์เนยแท้", variantSummary: "-", quantity: 4, unitPrice: 65 },
+    ],
+    subtotal: 550,
+    shippingFee: 0,
+    discount: 0,
+    total: 550,
+  },
+  {
+    id: "order-002",
+    orderNumber: "BK20260628-014",
+    placedAt: "2026-06-28T14:05:00.000Z",
+    status: "completed",
+    fulfillmentMethod: "delivery",
+    scheduledDate: "2026-06-29",
+    scheduledTimeSlot: "13:00 - 15:00",
+    items: [{ productName: "ช็อกโกแลตฟัดจ์เค้ก", variantSummary: "ไซซ์ใหญ่", quantity: 1, unitPrice: 630 }],
+    subtotal: 630,
+    shippingFee: 50,
+    discount: 100,
+    total: 580,
+  },
+  {
+    id: "order-003",
+    orderNumber: "BK20260715-027",
+    placedAt: "2026-07-15T09:12:00.000Z",
+    status: "preparing",
+    fulfillmentMethod: "pickup",
+    scheduledDate: "2026-07-23",
+    scheduledTimeSlot: "16:00 - 18:00",
+    items: [
+      { productName: "คุกกี้มัทฉะไวท์ช็อก", variantSummary: "-", quantity: 6, unitPrice: 60 },
+      { productName: "โดนัทมัทฉะสตรอว์เบอร์รี่", variantSummary: "-", quantity: 4, unitPrice: 55 },
+    ],
+    subtotal: 580,
+    shippingFee: 0,
+    discount: 0,
+    total: 580,
+  },
+];
