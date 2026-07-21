@@ -28,7 +28,7 @@ export function SiteHeader() {
             type="button"
             onClick={() => setIsMobileNavOpen(true)}
             aria-label="เปิดเมนู"
-            className="rounded-full p-2 text-ink hover:bg-cream-dark/60 lg:hidden"
+            className="rounded-full p-2 text-ink hover:bg-cream-dark/60 xl:hidden"
           >
             <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
@@ -40,13 +40,13 @@ export function SiteHeader() {
             <span className="font-heading text-lg leading-tight text-ink sm:text-xl">{storeInfo.nameTh}</span>
           </Link>
 
-          <nav className="hidden flex-1 items-center justify-center gap-1 lg:flex">
+          <nav className="hidden shrink-0 items-center gap-0.5 xl:flex">
             {primaryNavLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
                 className={cn(
-                  "rounded-full px-3.5 py-2 text-sm font-medium transition-colors",
+                  "whitespace-nowrap rounded-full px-2.5 py-2 text-sm font-medium transition-colors",
                   pathname === link.href
                     ? "bg-terracotta/10 text-terracotta"
                     : "text-ink-soft hover:bg-cream-dark/60 hover:text-ink",
